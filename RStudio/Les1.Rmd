@@ -1,0 +1,68 @@
+---
+title: "Huiswerk 1"
+author: "Jayden"
+date: "September 18, 2018"
+output: html_document
+---
+
+Opdracht 1.4
+```{r}
+worpen = sample(1:6, 1000, replace = T)
+t = table(worpen)
+t
+barplot(t, col = "#FF60CC", main = "Lekker dobbel steentjes gooien", ylab = "Hoeveel heid gegooid", xlab = "Aantal ogen op de dobbelsteen", )
+```
+
+Opdracht 1.5.1
+```{r}
+worp1 = sample(1:6, 10, replace = T)
+worp2 = sample(1:6, 10, replace = T)
+worp3 = sample(1:6, 10, replace = T)
+totaal = worp1 + worp2 + worp3
+t = table(totaal)
+t
+plot(t, type = "b", col="red", )
+```
+
+Opdracht 1.5.2
+
+```{r}
+worp1 = sample(1:6, 100, replace = T)
+worp2 = sample(1:6, 100, replace = T)
+worp3 = sample(1:6, 100, replace = T)
+totaal = worp1 + worp2 + worp3
+t = table(totaal)
+t
+plot(t, type = "b", col="red", )
+```
+
+Opdracht 1.5.3
+```{r}
+worp1 = sample(1:6, 1000, replace = T)
+worp2 = sample(1:6, 1000, replace = T)
+worp3 = sample(1:6, 1000, replace = T)
+totaal = worp1 + worp2 + worp3
+t = table(totaal)
+t
+plot(t, type = "b", col="red", )
+```
+
+
+Opdracht 1.5.4
+```{r}
+worp1 = sample(1:6, 10000, replace = T)
+worp2 = sample(1:6, 10000, replace = T)
+worp3 = sample(1:6, 10000, replace = T)
+totaal = worp1 + worp2 + worp3
+t = table(totaal)
+t
+plot(t, type = "b", col="red", )
+```
+
+
+
+
+11 wordt het vaakst gegooid
+
+
+

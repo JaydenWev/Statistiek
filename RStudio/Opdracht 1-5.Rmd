@@ -1,0 +1,6 @@
+---
+title: "Opdracht 1-5"
+author: "Jayden"
+date: "September 18, 2018"
+output: html_document
+---
