@@ -30,7 +30,7 @@ Opdracht 2.2
 - Minimaal 5% te veel dronken
 - Meer dan de helft dronken
 ```{r}
-dbinom(100, 100, 14/1000)
+dbinom(0, 100, 14/1000)
 
 pbinom(5, 100, 14/1000)
 
