@@ -20,9 +20,9 @@ dbinom(0, 25, 4/100)
 
 pbinom(5, 25, 4/100) - pbinom(0, 25, 4/100)
 
-f = pbinom(5, 25, 4/100)
+f = pbinom(1:5, 25, 4/100)
 
-plot( f)
+plot( f, type = "b")
 ```
 
 Opdracht 2.2
