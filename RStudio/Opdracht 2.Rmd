@@ -5,34 +5,6 @@ date: "October 8, 2018"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-
-
-
-
 -------------------------------------------------------
 -------------------------------------------------------
 -------------   Begin Opdracht    ---------------------
@@ -41,57 +13,58 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 
 Opdracht 2.1
+-  In pak van 25 producten geen defecte producten zijn
+- De kans dat tussen 1 en 5 producten defect zijn
 ```{r}
-
 dbinom(0, 25, 4/100)
 
 f = pbinom(5, 25, 4/100)
 
 plot( f)
-
 ```
+
 Opdracht 2.2
+- 100 automobulisten nuchter zijn
+- Minimaal 5% te veel dronken
+- Meer dan de helft dronken
 ```{r}
 dbinom(100, 100, 14/1000)
 
 pbinom(5, 100, 14/1000)
 
 1 - pbinom(42, 100, 42/100)
-
-
-
 ```
 
 Opdracht 2.3
-Excecuties in 2017:
+- hoeveel executies 2017 in Amerika
 23
 Bron: 
 https://deathpenaltyinfo.org/number-executions-state-and-region-1976
+
+- Geen onschuldigen geexecuteerd in 2017
+- Aantal executies voordat de kans voor een onschuldige groter is dan 50%
 
 ```{r}
 dbinom(0, 23, 4/100)
 
 qbinom(4/100, 23, 50/100, lower.tail = F)
-
 ```
 
 Opdracht 2.4
+- geen meldingen tussen 00:00 en 8:00
+- 3 tot 6 uur tussen 2 meldingen
+- grafiek met de kans van de meldingen ten opzichte van de tijd
 ```{r}
-
 dpois(0, 8 * 15/24)
 
 pexp(6, 15/24) - pexp(3, 15/24)
 
-
-
-
+plot(pexp(1:24, 15/24, lower.tail = F), type = "l", col="blue")
 ```
 
 
-
-
-
 Opdracht 2.5
+- Gemiddeld wachten op de tram
 10
 
 
