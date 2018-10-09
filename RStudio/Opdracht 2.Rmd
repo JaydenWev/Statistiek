@@ -71,13 +71,39 @@ https://deathpenaltyinfo.org/number-executions-state-and-region-1976
 ```{r}
 dbinom(0, 23, 4/100)
 
-qbinom(0.5, 23, 42/100)
+qbinom(4/100, 23, 50/100, lower.tail = F)
 
 ```
 
 Opdracht 2.4
 ```{r}
-dbinom(8, 15, 15/24)
+
+dpois(0, 8 * 15/24)
+
+pexp(6, 15/24) - pexp(3, 15/24)
+
+
+
 
 ```
+
+
+
+
+
+Opdracht 2.5
+10
+
+
+
+
+
+
+
+
+
+
+
+
+
 
