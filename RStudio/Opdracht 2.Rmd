@@ -13,6 +13,7 @@ output: html_document
 
 
 Opdracht 2.1
+
 -  In pak van 25 producten geen defecte producten zijn
 - De kans dat tussen 1 en 5 producten defect zijn
 ```{r}
@@ -22,10 +23,11 @@ pbinom(5, 25, 4/100) - pbinom(0, 25, 4/100)
 
 f = pbinom(1:5, 25, 4/100)
 
-plot( f, type = "b")
+plot( f, type = "b", col ="blue")
 ```
 
 Opdracht 2.2
+
 - 100 automobulisten nuchter zijn
 - Minimaal 5% te veel dronken
 - Meer dan de helft dronken
@@ -38,8 +40,11 @@ pbinom(5, 100, 14/1000)
 ```
 
 Opdracht 2.3
-- hoeveel executies 2017 in Amerika
-23
+
+- hoeveel executies 2017 in Amerika:
+
+23 Executies
+
 Bron: 
 https://deathpenaltyinfo.org/number-executions-state-and-region-1976
 
@@ -53,6 +58,7 @@ qbinom(4/100, 23, 50/100, lower.tail = F)
 ```
 
 Opdracht 2.4
+
 - geen meldingen tussen 00:00 en 8:00
 - 3 tot 6 uur tussen 2 meldingen
 - grafiek met de kans van de meldingen ten opzichte van de tijd
@@ -61,11 +67,12 @@ dpois(0, 8 * 15/24)
 
 pexp(6, 15/24) - pexp(3, 15/24)
 
-plot(pexp(1:24, 15/24, lower.tail = F), type = "l", col="blue")
+plot(pexp(0:24, 15/24, lower.tail = F), type = "l", col="blue", xlab = "Aantal uren", ylab = "Kans op volgende melding")
 ```
 
 
 Opdracht 2.5
+
 - Gemiddeld wachten op de tram
 10
 
