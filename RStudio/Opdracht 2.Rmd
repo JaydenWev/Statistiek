@@ -18,6 +18,8 @@ Opdracht 2.1
 ```{r}
 dbinom(0, 25, 4/100)
 
+pbinom(5, 25, 4/100) - pbinom(0, 25, 4/100)
+
 f = pbinom(5, 25, 4/100)
 
 plot( f)
