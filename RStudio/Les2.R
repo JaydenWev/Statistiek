@@ -50,3 +50,7 @@ dbinom(0, 23,41/1000)
 
 
 dbinom(19, 20, 0,09)
+
+
+#poisson verdeling geeft aan de kans dat iets gebeurt in de gegeven tijd
+#

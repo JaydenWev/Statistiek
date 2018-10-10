@@ -21,6 +21,8 @@ dbinom(0, 25, 4/100)
 
 pbinom(5, 25, 4/100) - pbinom(0, 25, 4/100)
 
+plot(table(rbinom(1000, 25, 4/100)))
+
 f = pbinom(1:5, 25, 4/100)
 
 plot( f, type = "b", col ="blue")
@@ -34,9 +36,9 @@ Opdracht 2.2
 ```{r}
 dbinom(0, 100, 14/1000)
 
-pbinom(5, 100, 14/1000)
+1 - pbinom(4, 100, 14/1000)
 
-1 - pbinom(42, 100, 42/100)
+1 - pbinom(4, 100, 42/100)
 ```
 
 Opdracht 2.3
@@ -55,6 +57,7 @@ https://deathpenaltyinfo.org/number-executions-state-and-region-1976
 dbinom(0, 23, 4/100)
 
 qbinom(4/100, 23, 50/100, lower.tail = F)
+
 ```
 
 Opdracht 2.4
@@ -74,18 +77,4 @@ plot(pexp(0:24, 15/24, lower.tail = F), type = "l", col="blue", xlab = "Aantal u
 Opdracht 2.5
 
 - Gemiddeld wachten op de tram
-10
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+5 min
